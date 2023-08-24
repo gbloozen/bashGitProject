@@ -38,13 +38,13 @@ jobs:
           echo "Have a great day!"
           
     github_info:
-    runs-on: ubuntu-latest
-    steps:
-        - env:
-            GITHUB_CONTEXT: ${{ toJson(github) }}
-          run: |
-            echo Triggered Event: ${{ github.event_name }}
-            echo Current Repository: ${{ github.repository }}
-            echo "$GITHUB_CONTEXT"
+      runs-on: ubuntu-latest
+      steps:
+          - env:
+              GITHUB_CONTEXT: ${{ toJson(github) }}
+            run: |
+              echo Triggered Event: ${{ github.event_name }}
+              echo Current Repository: ${{ github.repository }}
+              echo "$GITHUB_CONTEXT"
 
 
