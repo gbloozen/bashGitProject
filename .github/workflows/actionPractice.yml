@@ -37,7 +37,7 @@ jobs:
           echo "Now ending build workflow."
           echo "Have a great day!"
           
-    github_info:
+  github_info:
       runs-on: ubuntu-latest
       steps:
           - env:
